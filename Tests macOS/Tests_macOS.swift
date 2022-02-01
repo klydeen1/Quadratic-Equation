@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Quadratic_Equation
 
 class Tests_macOS: XCTestCase {
 
@@ -29,6 +30,82 @@ class Tests_macOS: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testQuadraticInitialization() async {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 1.0
+        let b = 1.0
+        let c = -2.0
+            
+        let myQuadratic = QuadraticEquation()
+        let _ = await myQuadratic.initWithValues(passedA: a, passedB: b, passedC: c)
+            
+        let x1 = myQuadratic.x1
+        let x2 = myQuadratic.x2
+        let x1Prime = myQuadratic.x1Prime
+        let x2Prime = myQuadratic.x2Prime
+        XCTAssertEqual(x1, 1, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(x2, -2, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(x1Prime, 1, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(x2Prime, -2, accuracy: 1.0E-7, "Was not equal to this resolution.")
+    }
+    
+    func testCalculateX1() async {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 1.0
+        let b = 1.0
+        let c = -2.0
+            
+        let myQuadratic = QuadraticEquation()
+
+        let x1 = await myQuadratic.calculateX1(a: a, b: b, c: c)
+            
+        XCTAssertEqual(x1, 1, accuracy: 1.0E-7, "Was not equal to this resolution.")
+    }
+    
+    func testCalculateX2() async {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 1.0
+        let b = 1.0
+        let c = -2.0
+            
+        let myQuadratic = QuadraticEquation()
+
+        let x2 = await myQuadratic.calculateX2(a: a, b: b, c: c)
+            
+        XCTAssertEqual(x2, -2, accuracy: 1.0E-7, "Was not equal to this resolution.")
+    }
+    
+    func testCalculateX1Prime() async {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 1.0
+        let b = 1.0
+        let c = -2.0
+            
+        let myQuadratic = QuadraticEquation()
+
+        let x1Prime = await myQuadratic.calculateX1Prime(a: a, b: b, c: c)
+            
+        XCTAssertEqual(x1Prime, 1, accuracy: 1.0E-7, "Was not equal to this resolution.")
+    }
+    
+    func testCalculateX2Prime() async {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 1.0
+        let b = 1.0
+        let c = -2.0
+            
+        let myQuadratic = QuadraticEquation()
+
+        let x2Prime = await myQuadratic.calculateX2Prime(a: a, b: b, c: c)
+            
+        XCTAssertEqual(x2Prime, -2, accuracy: 1.0E-7, "Was not equal to this resolution.")
     }
 
     func testLaunchPerformance() throws {

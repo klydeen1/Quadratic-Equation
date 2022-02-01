@@ -17,6 +17,15 @@
 		656CD52827A898EA0009DDE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD4FE27A898E60009DDE9 /* ContentView.swift */; };
 		656CD52927A898EA0009DDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656CD4FF27A898E90009DDE9 /* Assets.xcassets */; };
 		656CD52A27A898EA0009DDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656CD4FF27A898E90009DDE9 /* Assets.xcassets */; };
+		656CD53A27A8995B0009DDE9 /* QuadraticEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD53B27A8995B0009DDE9 /* QuadraticEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD5C727A8C4C00009DDE9 /* Quadratic-Equation.app in Resources */ = {isa = PBXBuildFile; fileRef = 656CD50A27A898E90009DDE9 /* Quadratic-Equation.app */; };
+		656CD5CA27A8C6DD0009DDE9 /* QuadraticEquation.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD5CB27A8C6EC0009DDE9 /* QuadraticEquation.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD5CD27A8C71D0009DDE9 /* QuadraticEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD5CE27A8D16B0009DDE9 /* QuadraticEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */; };
+		656CD5D027A8EAAC0009DDE9 /* TestCase.txt in Resources */ = {isa = PBXBuildFile; fileRef = 656CD5CF27A8EAAC0009DDE9 /* TestCase.txt */; };
+		656CD5D127A8EAAC0009DDE9 /* TestCase.txt in Resources */ = {isa = PBXBuildFile; fileRef = 656CD5CF27A8EAAC0009DDE9 /* TestCase.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +37,13 @@
 			remoteInfo = "Quadratic-Equation (iOS)";
 		};
 		656CD51E27A898EA0009DDE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656CD4F827A898E60009DDE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656CD50927A898E90009DDE9;
+			remoteInfo = "Quadratic-Equation (macOS)";
+		};
+		656CD5C827A8C4C00009DDE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 656CD4F827A898E60009DDE9 /* Project object */;
 			proxyType = 1;
@@ -49,6 +65,8 @@
 		656CD51D27A898EA0009DDE9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656CD52127A898EA0009DDE9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		656CD52327A898EA0009DDE9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadraticEquation.swift; sourceTree = "<group>"; };
+		656CD5CF27A8EAAC0009DDE9 /* TestCase.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestCase.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5CB27A8C6EC0009DDE9 /* QuadraticEquation.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5CA27A8C6DD0009DDE9 /* QuadraticEquation.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +106,13 @@
 		656CD4F727A898E60009DDE9 = {
 			isa = PBXGroup;
 			children = (
+				656CD5CF27A8EAAC0009DDE9 /* TestCase.txt */,
 				656CD4FC27A898E60009DDE9 /* Shared */,
 				656CD50B27A898E90009DDE9 /* macOS */,
 				656CD51427A898EA0009DDE9 /* Tests iOS */,
 				656CD52027A898EA0009DDE9 /* Tests macOS */,
 				656CD50527A898E90009DDE9 /* Products */,
+				656CD5C627A8C4C00009DDE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +121,7 @@
 			children = (
 				656CD4FD27A898E60009DDE9 /* Quadratic_EquationApp.swift */,
 				656CD4FE27A898E60009DDE9 /* ContentView.swift */,
+				656CD53927A8995B0009DDE9 /* QuadraticEquation.swift */,
 				656CD4FF27A898E90009DDE9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -141,6 +164,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		656CD5C627A8C4C00009DDE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +185,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				656CD5C927A8C4C00009DDE9 /* PBXTargetDependency */,
 			);
 			name = "Quadratic-Equation (iOS)";
 			productName = "Quadratic-Equation (iOS)";
@@ -266,6 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5D027A8EAAC0009DDE9 /* TestCase.txt in Resources */,
+				656CD5C727A8C4C00009DDE9 /* Quadratic-Equation.app in Resources */,
 				656CD52927A898EA0009DDE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5D127A8EAAC0009DDE9 /* TestCase.txt in Resources */,
 				656CD52A27A898EA0009DDE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +335,7 @@
 			files = (
 				656CD52727A898EA0009DDE9 /* ContentView.swift in Sources */,
 				656CD52527A898EA0009DDE9 /* Quadratic_EquationApp.swift in Sources */,
+				656CD53A27A8995B0009DDE9 /* QuadraticEquation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +345,7 @@
 			files = (
 				656CD52827A898EA0009DDE9 /* ContentView.swift in Sources */,
 				656CD52627A898EA0009DDE9 /* Quadratic_EquationApp.swift in Sources */,
+				656CD53B27A8995B0009DDE9 /* QuadraticEquation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5CE27A8D16B0009DDE9 /* QuadraticEquation.swift in Sources */,
 				656CD51827A898EA0009DDE9 /* Tests_iOSLaunchTests.swift in Sources */,
 				656CD51627A898EA0009DDE9 /* Tests_iOS.swift in Sources */,
 			);
@@ -326,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD5CD27A8C71D0009DDE9 /* QuadraticEquation.swift in Sources */,
 				656CD52427A898EA0009DDE9 /* Tests_macOSLaunchTests.swift in Sources */,
 				656CD52227A898EA0009DDE9 /* Tests_macOS.swift in Sources */,
 			);
@@ -343,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = 656CD50927A898E90009DDE9 /* Quadratic-Equation (macOS) */;
 			targetProxy = 656CD51E27A898EA0009DDE9 /* PBXContainerItemProxy */;
+		};
+		656CD5C927A8C4C00009DDE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656CD50927A898E90009DDE9 /* Quadratic-Equation (macOS) */;
+			targetProxy = 656CD5C827A8C4C00009DDE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -592,6 +635,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Quadratic-Equation (iOS)";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
